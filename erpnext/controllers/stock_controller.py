@@ -674,8 +674,8 @@ def create_repost_item_valuation_entry(args):
 	repost_entry.posting_date = args.posting_date
 	repost_entry.posting_time = args.posting_time
 	repost_entry.company = args.company
-	repost_entry.allow_negative_stock = args.allow_negative_stock
-	repost_entry.allow_zero_rate = args.allow_zero_rate
+	repost_entry.allow_negative_stock = 1
+	repost_entry.allow_zero_rate = 1
 	repost_entry.flags.ignore_links = True
 	repost_entry.save()
 	repost_entry.submit()
